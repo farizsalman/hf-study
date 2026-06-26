@@ -12,4 +12,34 @@ INFERENCE : Using trained models to generate output or make predictions based on
 
 
 EXPLORING MODELS:
-   
+
+   Text generation:
+     1.  Model = zai-org/GLM-5.2 
+         purpose = Long horizon task (Horizon task = task that requires an Ai system to plan and work toward one goal over many steps, making decisions along the way.)
+         1M token context
+
+    Image-Text to Image:
+        1. Model = nomadoor/flux-2-klein-9B-schematic-lora
+           Purpose = Takes and image and text as input, and generate a new image as output based on the given reference.
+
+
+
+
+
+
+
+
+
+
+
+
+Different Type of Tasks done by models
+
+| Task                | What the model predicts                             |
+| ------------------- | --------------------------------------------------- |
+| Relative Depth      | Which objects are closer or farther away            |
+| Surface Normal      | Which direction each surface is facing              |
+| Body Pose           | Positions of the main body joints                   |
+| Full Pose           | Positions of body, hands, and face joints           |
+| Binary Segmentation | Which pixels belong to the object vs. background    |
+| Amodal Segmentation | The full shape of an object, including hidden parts |
