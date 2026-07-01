@@ -70,19 +70,19 @@ Different Type of Tasks done by models
 
 MODEL CARDS :
 
-Model name : distilbert/distilbert-base-uncased-finetuned-sst-2-english
-    DESCRIPTION:
-        - text classification
-        - Fine tuned on DistilBert
-        - For sentiment analysis
-    TRAINING DATA:
-        - dataset: Stanford Sentiment treebank 2
-        - Binary (Positive & Negative) 
-    EVALUATION:
-        - Accuracy is 91.3 on dev set
-    INTENDED USES:
-        - Text classification
-        - masked language modeling or next sentence prediction
-    LIMITATIONS & BIAS:
-        - model could produce biased predictions that target underrepresented populations
-        - Biased result based on the country.
+    Model name : distilbert/distilbert-base-uncased-finetuned-sst-2-english
+        DESCRIPTION:
+            - text classification
+            - Fine tuned on DistilBert
+            - For sentiment analysis
+        TRAINING DATA:
+            - dataset: Stanford Sentiment treebank 2
+            - Binary (Positive & Negative) 
+        EVALUATION:
+            - Accuracy is 91.3 on dev set
+        INTENDED USES:
+            - Text classification
+            - masked language modeling or next sentence prediction
+        LIMITATIONS & BIAS:
+            - model could produce biased predictions that target underrepresented populations
+            - Biased result based on the country.
