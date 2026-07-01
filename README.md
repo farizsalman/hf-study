@@ -9,7 +9,7 @@ Libraries and Versions :
 
 
 INFERENCE : Using trained models to generate output or make predictions based on new input data
-
+SST 2 (Stanford Sentiment Treebank 2): It is a sentiment analysis dataset used to train and evaluate NLP models
 
 EXPLORING MODELS:
 
@@ -21,6 +21,11 @@ EXPLORING MODELS:
     Image-Text to Image:
         1. Model = nomadoor/flux-2-klein-9B-schematic-lora
            Purpose = Takes and image and text as input, and generate a new image as output based on the given reference.
+
+    Text to Image Diffusion model:
+        1. Model = krea/Krea-2-Turbo
+           Pupose = generate image from text through diffusion
+           
 
 
 
@@ -43,3 +48,11 @@ Different Type of Tasks done by models
 | Full Pose           | Positions of body, hands, and face joints           |
 | Binary Segmentation | Which pixels belong to the object vs. background    |
 | Amodal Segmentation | The full shape of an object, including hidden parts |
+
+
+
+
+
+MODEL CARDS :
+
+Model name : distilbert/distilbert-base-uncased-finetuned-sst-2-english
