@@ -13,10 +13,11 @@ Libraries and Versions :
 
 TOPICS :
 
-INFERENCE : Using trained models to generate output or make predictions based on new input data
-SST 2 (Stanford Sentiment Treebank 2): It is a sentiment analysis dataset used to train and evaluate NLP models
-Downstream Task : Finetuning for one specific task
-Biased Prediction: A model is biased if it tends to make systematically different or unfair predictions for certain groups of people.
+-INFERENCE : Using trained models to generate output or make predictions based on new input data
+-SST 2 (Stanford Sentiment Treebank 2): It is a sentiment analysis dataset used to train and evaluate NLP models
+-Downstream Task : Finetuning for one specific task
+-Biased Prediction: A model is biased if it tends to make systematically different or unfair predictions for certain groups of people.
+- Parameter: They are the values the model learns during training.
 
 
 
@@ -28,8 +29,8 @@ Biased Prediction: A model is biased if it tends to make systematically differen
 
 EXPLORING MODELS:
 
-   Text generation:
-     1.  Model = zai-org/GLM-5.2 
+    Text generation:
+        1.Model = zai-org/GLM-5.2 
          purpose = Long horizon task (Horizon task = task that requires an Ai system to plan and work toward one goal over many steps, making decisions along the way.)
          1M token context
 
@@ -70,7 +71,7 @@ Different Type of Tasks done by models
 
 MODEL CARDS :
 
-    Model name : distilbert/distilbert-base-uncased-finetuned-sst-2-english
+    Model name: distilbert/distilbert-base-uncased-finetuned-sst-2-english
         DESCRIPTION:
             - text classification
             - Fine tuned on DistilBert
@@ -86,3 +87,30 @@ MODEL CARDS :
         LIMITATIONS & BIAS:
             - model could produce biased predictions that target underrepresented populations
             - Biased result based on the country.
+    
+
+    Model name: mistralai/Mistral-7B-Instruct-v0.1
+        DESCRIPTION:
+            - 7 Billion Parameters
+            -  It is an Instruction trained model
+            - Model Architecture: Grouped-Query Attention, Sliding-Window Attention, Byte-fallback BPE tokenizer
+        TRAINING DATA: 
+            - Dataset: Publicily available coversation datasets
+        INTENDED USE :
+            - Text generation, General conversation
+            - Instruction following, Summarization
+        LIMITATIONS & BIAS:
+            - It is mainly a demonstration of instruction tuning
+            - It may generate offensive content because it does not have any moderation mechanism
+    
+    Model name: google/mt5-base
+        DESCRIPTION:
+            - It is a base model
+            - Trained on 101 languages
+        TRAINING DATA:
+            - Dataset: mC4
+            - 
+        INTENDED USE:
+            - Text to text generation
+        LIMITATION & BIAS:
+            - Base model, need to be finetuned if needed for any specific task
